@@ -1,0 +1,22 @@
+{
+  "name": "dummy",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dummy": "bun run --hot index.ts",
+    "start": "bun run index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/figlet": "^1.5.8",
+    "@types/luxon": "^3.4.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "figlet": "^1.7.0",
+    "hono": "^4.2.5",
+    "luxon": "^3.4.4"
+  }
+}
