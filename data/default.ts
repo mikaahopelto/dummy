@@ -1,4 +1,8 @@
 import figlet from "figlet";
+// @ts-ignore - Figlet types are missing importable-fonts
+import doh from "figlet/importable-fonts/Doh";
+
+figlet.parseFont("Doh", doh);
 
 const body = figlet.textSync("Dummy/", "Doh");
 

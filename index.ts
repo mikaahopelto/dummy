@@ -1,5 +1,6 @@
 import html from "./data/default.ts";
 import { Hono } from "hono";
+import { handle } from "hono/aws-lambda";
 import bookings from "./data/bookings.ts";
 import prices from "./data/prices.ts";
 import calendar from "./data/calendar.ts";
@@ -13,3 +14,5 @@ app.get("/calendar", (c) => c.json(calendar));
 app.get("/forecast", (c) => c.json(forecast));
 
 export default app;
+
+export const handler = handle(app); // For AWS Lambda
