@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dummy": "bun run --hot index.ts",
-    "start": "bun run index.ts"
+    "start": "bun run index.ts",
+    "deploy": "cd deploy && cdk deploy && cd .."
   },
   "devDependencies": {
     "@types/bun": "latest",
